@@ -1,0 +1,24 @@
+{
+	"name": "standup-scheduler",
+	"version": "1.0.0",
+	"description": "Send schedule Standup message to a Microsoft Teams channel",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/garyhtou/standup-scheduler.git"
+	},
+	"author": "Gary Tou <gary@garytou.com> (https://garyhtou.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/garyhtou/standup-scheduler/issues"
+	},
+	"homepage": "https://github.com/garyhtou/standup-scheduler#readme",
+	"dependencies": {
+		"axios": "^1.2.2",
+		"dotenv": "^16.0.3",
+		"node-cron": "^3.0.2"
+	}
+}
