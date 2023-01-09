@@ -1,7 +1,7 @@
 {
 	"name": "standup-scheduler",
 	"version": "1.0.0",
-	"description": "Send schedule Standup message to a Microsoft Teams channel",
+	"description": "Send scheduled Standup messages to a Microsoft Teams channel",
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js"
