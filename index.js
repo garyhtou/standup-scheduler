@@ -2,6 +2,7 @@ require('dotenv').config();
 const cron = require('node-cron');
 const axios = require('axios').default;
 
+const OFF = process.env.OFF;
 const RECCURENCE = process.env.RECCURENCE;
 const ENDPOINT = process.env.ENDPOINT;
 if (!RECCURENCE || !ENDPOINT) {
@@ -31,6 +32,8 @@ const teamsMessage = () => {
 };
 
 const sendMessage = async () => {
+	if (OFF) return;
+
 	console.log('Sending message', new Date());
 	try {
 		await axios.post(ENDPOINT, teamsMessage());
